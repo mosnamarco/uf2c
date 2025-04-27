@@ -22,3 +22,5 @@
 - Made with maximum laziness, minimum effort. 😎
  
 *UF2C — “Because even writing commit messages is too much work.”*
+
+[Buy Me a Coffee](https://buymeacoffee.com/fossoctopus)
