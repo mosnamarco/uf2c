@@ -1,26 +1,61 @@
 # UF2C v0.0.1
 
-## Built by lazy people, for lazy people (WIP 🚧)
+_A tool made by lazy people, for lazy people._
 
-## ✨ Current Features
-- 📝 Generate commit messages using AI (because why not?)
-- 📋 Create daily progress updates using the classic formats:
-  - “What I did today”
-  - “Challenges and How I Solved Them”
+This Go package provides a command-line tool to assist with Git workflows by leveraging the OpenAI API. It can generate commit messages and progress updates based on the changes in your Git working directory.
 
-## 🛠️ TODO
-- [ ] Support custom prompt creation
-- [ ] Automate git add . && git commit with AI-generated commit messages
-- [ ] Consider renaming the project (uf2c might be confusing)
-- [ ] Refactor and reorganize project structure for better modularization
+## Features
 
-## 🤝 Contribution Guide
-- Submit feature requests through pull requests or issues.
+-   **Generate Commit Messages:** Automatically create concise and relevant commit messages based on the `git diff`.
+-   **Generate Progress Updates:** Produce clear and simple summaries of your daily work, including what you accomplished and any challenges faced. The output is formatted for easy understanding.
+-   **Clipboard Integration (macOS):** Optionally copies the generated output to your clipboard for quick use.
 
-## 📌 Notes
-- Still a work in progress, expect rapid changes!
-- Made with maximum laziness, minimum effort. 😎
- 
-*UF2C — “Because even writing commit messages is too much work.”*
+## Prerequisites
 
-[Buy Me a Coffee](https://buymeacoffee.com/fossoctopus)
+-   **Go Installation:** Ensure you have Go installed on your system. You can download it from [https://go.dev/dl/](https://go.dev/dl/).
+-   **Git:** Git must be initialized in your project directory.
+-   **.env File:** You need to create a `.env` file in the root of your project with your OpenAI API key:
+
+    ```
+    OPENAI_API_KEY=your_openai_api_key_here
+    ```
+
+    Replace `your_openai_api_key_here` with your actual OpenAI API key. You can obtain one from [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys).
+
+## Installation
+
+1.  **Clone the repository (if applicable):**
+
+    ```bash
+    git clone <repository_url>
+    cd <repository_directory>
+    ```
+
+2.  **Build the Go package:**
+
+    ```bash
+    go build -o uf2c main.go
+    ```
+
+    This will create an executable file named `uf2c` in your current directory.
+
+## Usage
+
+Navigate to your Git repository in the terminal and run the `uf2c` executable with the desired flags:
+
+### Show help
+```bash
+./uf2c -h
+```
+
+### Generate Commit Message
+
+```bash
+./uf2c -cm
+```
+
+### Generate Progress Update
+
+```bash
+./uf2c -pu
+```
