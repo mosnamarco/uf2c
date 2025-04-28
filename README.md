@@ -59,3 +59,9 @@ Navigate to your Git repository in the terminal and run the `uf2c` executable wi
 ```bash
 ./uf2c -pu
 ```
+
+## Hey! Consider supporting me in my FOSS journey. I plan to keep on making free tools like this, and well, I need the $$ to buy me some good ol' coffee~ Thanksss
+
+If you like my work, consider supporting me on [Buy Me A Coffee](https://buymeacoffee.com/fossoctopus). Your support helps me continue developing open-source projects and bringing more value to the community! - Foss
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Support_Me-Buy_Me_A_Coffee-yellow?logo=buymeacoffee)](https://buymeacoffee.com/fossoctopus)
